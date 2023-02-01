@@ -1,0 +1,110 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../img/small.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  height: 330px;
+  width: 350px;
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 0.1px #e4e5ff;
+  border-radius: 3px;
+}
+.login-container__animation {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #1ED185;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.login-container__form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login-container__form-container input {
+  width: 250px;
+  height: 35px;
+  background: none;
+  border: 0.1px solid #e4e5ff;
+  border-radius: 2px;
+  margin: 10px 0;
+  color: #e4e5ff;
+  font-family: "Montserrat", sans-serif;
+}
+.login-container__form-container label {
+  border: 1px solid #e4e5ff;
+}
+.login-container__btn {
+  width: 250px;
+  height: 35px;
+  border-radius: 2px;
+  border: none;
+  background-color: #1ED185;
+  color: #fff;
+  cursor: pointer;
+}
+.login-container__footer {
+  width: 250px;
+  margin: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+.login-container__footer__remeber {
+  color: #e4e5ff;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.login-container__footer__forgot {
+  font-size: 1.3rem;
+  color: #1ED185;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (min-width: 600px) {
+  body {
+    background-image: url("../img/big.jpg");
+  }
+}
+::-moz-placeholder {
+  color: #e4e5ff;
+  font-size: 1.4rem;
+}
+:-ms-input-placeholder {
+  color: #e4e5ff;
+  font-size: 1.4rem;
+}
+::placeholder {
+  color: #e4e5ff;
+  font-size: 1.4rem;
+}/*# sourceMappingURL=main.css.map */
